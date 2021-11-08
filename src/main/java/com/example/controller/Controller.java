@@ -18,8 +18,8 @@ public class Controller {
 		return service.getHome();
 	}
 
-	@GetMapping("/{id}")
-	public String getHomeId(@RequestBody int id) {
+	@GetMapping("/response")
+	public String getHomeId(@RequestBody String id) {
 		return "hello id:-" + id;
 	}
 }
